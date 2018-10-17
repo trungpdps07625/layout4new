@@ -58,6 +58,7 @@ body
 			h2
 				font-size: 1.5rem
 				padding: 1rem 0 2rem 0
+				font-weight: 500
 				position: relative
 				&:before, &:after
 					content: ''
@@ -105,7 +106,6 @@ body
 						padding-top: 2.75rem
 						img
 							height: 100%
-							width: 70%
 					h5
 						padding-top: 15px
 					time
@@ -115,6 +115,7 @@ body
 						line-height: 1.2rem
 		+media-breakpoint-up(lg)
 			.item
+				text-align: left
 				figure
 					.blocking
 						img
@@ -138,9 +139,9 @@ body
 								color: #000000
 	.home_develop
 		padding-bottom: 6.25rem
-		background-image: url("../img/home_services_5.png")
+		background: url("../img/home_services_5.png")
 		background-size: cover
-		background-position-y: 100% 
+		background-position-y: 100%
 	+media-breakpoint-up(xs)
 		.title_develop
 			h2
@@ -179,6 +180,8 @@ body
 			h2
 				padding-top: 5.625rem
 				padding-bottom: 10px
+				font-size: 2rem
+				font-weight: 900
 				&:before, &:after
 					width: 4.5rem
 					bottom: -1px
@@ -187,7 +190,7 @@ body
 					border-radius: 50%
 					width: 1.07rem
 					height: 1.07rem
-					top: 112.5px
+					top: 121.5px
 					border: 3px solid #00c4c9
 					background: #fff
 		.icon_develop
@@ -267,7 +270,7 @@ body
 	.home_category
 	+media-breakpoint-up(xs)
 		.home_category
-			.title
+			.title_category
 				padding-top: 2rem
 				h2
 					font-weight: 500
@@ -309,12 +312,15 @@ body
 					padding-bottom: 10px
 	+media-breakpoint-up(md)
 		.home_category
+			.title_category
+				h2
+					font-size: 2rem
 			.img1
 				.img-fluid
 					width: 75%
 	+media-breakpoint-up(lg)
 		.home_category
-			.title
+			.title_category
 				padding-top: 5rem
 				h2
 					font-size: 2rem
@@ -327,16 +333,13 @@ body
 						bottom: -1px
 					&:after
 						border-radius: 50%
-						width: 1.07rem
 						height: 1.07rem
+						width: 1.07rem
 						top: 42.5px
 			.menu
 				.navbar-nav
 					.nav-item
 						.nav-link
-							color: #000
-							font-weight: 900
-							padding: 0.5rem 0.625rem
 							&:hover,&.active
 								background: #00c4c9
 								padding: 0.5rem 0.625rem
@@ -390,7 +393,7 @@ body
 								transform: translateX(-50%)
 							h2
 								position: relative
-								font-weight: 900
+								font-weight: 500
 								padding-bottom: 10px
 								padding-top: 5rem
 								&:before, &:after
@@ -447,19 +450,21 @@ body
 					position: relative
 					.bg
 						max-height: 536px
-					.title
-						h2
-							&:before, &:after
-								width: 4.5rem
-								bottom: -8px
-							&:after
-								width: 1.0625rem
-								height: 1.0625rem
-								top: 112.5px
-						.title1
-							width: 450px
-							top: 246%
-							left: -45%
+						.title
+							h2
+								font-size: 2rem
+								font-weight: 900
+								&:before, &:after
+									width: 4.5rem
+									bottom: -8px
+								&:after
+									width: 1.0625rem
+									height: 1.0625rem
+									top: 112.5px
+							.title1
+								width: 450px
+								top: 246%
+								left: -45%
 	.home_clients
 	+media-breakpoint-up(xs)
 		.home_clients
