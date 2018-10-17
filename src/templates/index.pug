@@ -1,0 +1,158 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+block body
+	section.home_slider
+		.owl-carousel.owl-theme
+			.item
+				img.img-fluid(src="./img/home_slider_1.png", alt="slider")
+				.title
+					h1 Chúng Tôi Là Front-End ViệtNam
+					p Front-End Developer là nghề cực hot hiện nay, những lập trình viên<br>Front-end có đầy đủ các kĩ năng tổng hợp
+			.item
+				img.img-fluid(src="./img/home_slider_2.png", alt="slider")
+				.title
+					h1 Chúng Tôi Là Front-End ViệtNam
+					p Front-End Developer là nghề cực hot hiện nay, những lập trình viên<br>Front-end có đầy đủ các kĩ năng tổng hợp
+	section.home_services
+		.container.img-fluid
+			.row
+				.col.text-center
+					h2 TIN TỨC
+			.row.item
+				.col-md-12.col-lg-4
+					figure
+						.blocking
+							img(src="./img/home_services_1.png", alt="")
+						figcaption
+							h5 Trung tâm đạo tạo IT chuyên nghiệp
+							time 26/8/2018
+							p Với lợi thế gần khu vực sân bay Long Thành, Nhơn Trạch tiếp tục được hưởng lợi lớn từ dự án trọng điểm của Quốc gia. Sân bay Long Thành quy hoạch đế đón khoảng 100 triệu lượt khách/năm, dự kiến khởi công vào tháng 6/2020 và đưa vào khai thác năm 2025. Bên cạnh việc giảm tải cho sân bay Tân Sơn Nhất
+				.col-md-12.col-lg-4
+					figure
+						.blocking
+							img(src="./img/home_services_2.png", alt="")
+						figcaption
+							h5 Trung tâm đạo tạo IT chuyên nghiệp
+							time 26/8/2018
+							p Giữa năm 2017, cầu Cát Lái chính thức được phê duyệt đầu tư với số vốn lên tới 5,700 tỷ đồng. Cầu có chiều dài 4,5 km với 8 làn xe, vận tốc 80 km/h. Theo dự kiến, cầu sẽ hoàn thành trước năm 2020. Cầu Cát Lái có ý nghĩa đặc biệt quan trọng trong việc rút ngắn quãng đường, thời gian di chuyển từ Đồng Nai đến TP.HCM
+				.col-md-12.col-lg-4
+					figure
+						.blocking
+							img(src="./img/home_services_3.png", alt="")
+						figcaption
+							h5 Trung tâm đạo tạo IT chuyên nghiệp
+							time 26/8/2018
+							p Dự án đường Vành đai 3 dài 90 km với 6 làn xe, vận tốc di chuyển 100 km/h, đi qua địa phận 4 tỉnh: TPHCM – Nhơn Trạch (Đồng Nai) – Bình Dương – Long An. Dự kiến đến Quý 2/2018 sẽ khởi công đoạn từ ngã tư quận Thủ Đức đến đường 25B (đường Tôn Đức Thắng) 
+	section.home_develop
+		.container
+			.row.title_develop
+				.col.text-center
+					h2 ĐỊNH HƯỚNG PHÁT TRIỂN
+			.row.icon_develop
+				.col-sm-6.col-md-3
+					.icon
+						i.fa.fa-copy
+						h5 TẦM NHÌN
+						p Cam kết chất lượng sản phẩm cao nhất Luôn đặt chữ tín lên hàng đầu Lấy lợi ích của khách hàng làm trung tâm hoạt động
+				.col-sm-6.col-md-3
+					.icon
+						i.fa.fa-moon-o
+						h5 TẦM NHÌN
+						p Cam kết chất lượng sản phẩm cao nhất Luôn đặt chữ tín lên hàng đầu Lấy lợi ích của khách hàng làm trung tâm hoạt động
+				.col-sm-6.col-md-3
+					.icon
+						i.fa.fa-object-group
+						h5 TẦM NHÌN
+						p Cam kết chất lượng sản phẩm cao nhất Luôn đặt chữ tín lên hàng đầu Lấy lợi ích của khách hàng làm trung tâm hoạt động
+				.col-sm-6.col-md-3
+					.icon
+						i.fa.fa-floppy-o
+						h5 TẦM NHÌN
+						p Cam kết chất lượng sản phẩm cao nhất Luôn đặt chữ tín lên hàng đầu Lấy lợi ích của khách hàng làm trung tâm hoạt động
+	section.home_note
+		figure
+			img.img-fluid(src="./img/home_services_6.png", alt="")
+		.text
+			p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus aliquam neque sapiente ea illum ducimus, odio aliquid aspernatur est dolorem sed sit ullam distinctio sint minus accusantium eaque esse delectus!
+			p.bt
+				a(href="#") XEM THÊM
+	
+	section.home_category
+		.container
+			.row.title
+				.col.text-center
+					h2 ĐỊNH HƯỚNG PHÁT TRIỂN
+			.row.menu
+				.col
+					ul.navbar-nav
+						li.nav-item.active
+							a.nav-link(href="index.html") TẤT CẢ
+						li.nav-item
+							a.nav-link(href="about.html") GROUP
+						li.nav-item
+							a.nav-link(href="about.html") TIN THỊ TRƯỜNG
+						li.nav-item
+							a.nav-link(href="about.html") TIN VỊT
+			.row.img1
+				.col-md-12.col-lg-4
+					figure
+						img.img-fluid(src="./img/home_services_3.png", alt="")
+				.col-md-12.col-lg-4
+					figure
+						img.img-fluid(src="./img/home_services_3.png", alt="")
+				.col-md-12.col-lg-4
+					figure
+						img.img-fluid(src="./img/home_services_3.png", alt="")
+	section.home_group
+		.owl-carousel.owl-theme
+			.item
+				.bg
+					img(src="./img/home_services_10.png", alt="")
+					.title
+						h2 KHÁCH HÀNG NÓI
+						img.icon.img-fluid(src="./img/home_services_4.png", alt="slider")
+						.title1
+							p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta at eligendi aperiam iusto sed, officia a ratione neque provident obcaecati reprehenderit molestias, rerum optio culpa consequuntur, iure harum quasi dolor!
+							h5 Pelican Steve
+							h6 CEO ABC Company
+			.item
+				.bg
+					img.img-fluid(src="./img/home_services_10.png", alt="")
+					.title
+						h2 KHÁCH HÀNG NÓI
+						img.icon.img-fluid(src="./img/home_services_4.png", alt="slider")
+						.title1
+							p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta at eligendi aperiam iusto sed, officia a ratione neque provident obcaecati reprehenderit molestias, rerum optio culpa consequuntur, iure harum quasi dolor!
+							h5 Pelican Steve
+							h6 CEO ABC Company
+			.item
+				.bg
+					img.img-fluid(src="./img/home_services_10.png", alt="")
+					.title
+						h2 KHÁCH HÀNG NÓI
+						img.icon.img-fluid(src="./img/home_services_4.png", alt="slider")
+						.title1
+							p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta at eligendi aperiam iusto sed, officia a ratione neque provident obcaecati reprehenderit molestias, rerum optio culpa consequuntur, iure harum quasi dolor!
+							h5 Pelican Steve
+							h6 CEO ABC Company
+	section.home_clients.pt-5
+		.container
+			.row
+				.owl-carousel.owl-theme
+					.item
+						img(src="./img/clients_1.png", alt="")
+					.item
+						img(src="./img/clients_2.png", alt="")
+					.item
+						img(src="./img/clients_3.png", alt="")
+					.item
+						img(src="./img/clients_4.png", alt="")
+					.item
+						img(src="./img/clients_5.png", alt="")
+					.item
+						img(src="./img/clients_6.png", alt="")

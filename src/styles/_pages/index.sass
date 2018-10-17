@@ -1,0 +1,507 @@
+body
+	font-family: Roboto
+	.home_slider
+		.owl-carousel
+			.owl-nav
+				margin: 0 0 20px 0
+				.owl-prev,
+				.owl-next
+					background: #b9b2b26b
+					i
+						padding: .5rem
+					&:hover
+						background: #00c4c9
+			.item
+				text-align: center
+				.title
+					margin-top: 10px
+					h1
+						font-size: 1.5rem
+					p
+						font-size: 12px
+		+media-breakpoint-up(md)
+			.owl-carousel
+				position: relative
+				.owl-nav
+					.owl-prev, .owl-next
+						position: absolute
+						top: 50%
+						transform: translateY(-100%)
+						width: 2.8125rem
+						height: 2.8125rem
+						background: #000000
+						color: #fff
+						&:hover
+							background: #00c4c9
+					.owl-prev
+						left: 1.7rem
+					.owl-next
+						right: 1.7rem
+				.item
+					position: relative
+					.title
+						position: absolute
+						bottom: 0
+						left: 0
+						width: 100%
+						color: #fff
+						text-align: center
+						padding: 2rem
+						h1
+							font-size: 2.25rem
+							padding-bottom: .3rem
+						p
+							font-size: 1.125rem
+	.home_services
+		padding-bottom: 5rem
+		+media-breakpoint-up(xs)
+			h2
+				font-size: 1.5rem
+				padding: 1rem 0 2rem 0
+				position: relative
+				&:before, &:after
+					content: ''
+					display: block
+					width: 4rem
+					height: 3.5px
+					position: absolute
+					left: 50%
+					transform: translateX(-50%)
+					bottom: 15px
+					background: #00c4c9
+				&:after
+					border-radius: 50%
+					width: 1rem
+					height: 1rem
+					top: 43px
+					border: 3px solid #00c4c9
+					background: #fff
+			.item
+				text-align: center
+				figure
+					.blocking
+						padding-top: .5rem
+					figcaption
+						h5
+							padding-top: 1rem
+		+media-breakpoint-up(md)
+			h2
+				font-size: 1.875rem
+				font-weight: 900
+				padding-top: 4.1875rem
+				padding-bottom: 0.8125rem
+				&:before, &:after
+					bottom: 0
+				&:after
+					top: 92px
+					width: 1.07rem
+					height: 1.07rem
+				&:before
+					width: 4.5rem
+					height: 3px
+			.item
+				figure
+					.blocking
+						padding-top: 2.75rem
+						img
+							height: 100%
+							width: 70%
+					h5
+						padding-top: 15px
+					time
+						color: gray
+					p
+						padding-top: 1rem
+						line-height: 1.2rem
+		+media-breakpoint-up(lg)
+			.item
+				figure
+					.blocking
+						img
+							width: 100%
+							filter: grayscale(1)
+							transition: .5s all ease-in-out
+					p
+						overflow: hidden
+						color: gray
+						transition: .5s all ease-in-out
+					&:hover
+						.blocking
+							img
+								box-shadow: 0px 0px 0px 4px #00c4c9
+								filter: grayscale(0)
+								transition: .3s all ease-in-out
+						figcaption
+							h5
+								color: #00c4c9
+							p
+								color: #000000
+	.home_develop
+		padding-bottom: 6.25rem
+		background-image: url("../img/home_services_5.png")
+		background-size: cover
+		background-position-y: 100% 
+	+media-breakpoint-up(xs)
+		.title_develop
+			h2
+				padding: 4rem 0 10px 0
+				font-size: 1.5rem
+				&:before, &:after
+					content: ''
+					display: block
+					width: 4rem
+					height: 3.5px
+					position: absolute
+					left: 50%
+					transform: translateX(-50%)
+					bottom: 0
+					background: #00c4c9
+				&:after
+					border-radius: 50%
+					width: 1rem
+					height: 1rem
+					top: 88.5px
+					border: 3px solid #00c4c9
+					background: #fff
+		.icon_develop
+			text-align: center
+			padding-top: 3.5rem
+			.icon
+				i
+					font-size: 3.5rem
+				h5
+					margin: 1rem 0 1rem 0
+					font-weight: 500
+				p
+					margin-bottom: 2rem
+	+media-breakpoint-up(lg)
+		.title_develop
+			h2
+				padding-top: 5.625rem
+				padding-bottom: 10px
+				&:before, &:after
+					width: 4.5rem
+					bottom: -1px
+					height: 3px
+				&:after
+					border-radius: 50%
+					width: 1.07rem
+					height: 1.07rem
+					top: 112.5px
+					border: 3px solid #00c4c9
+					background: #fff
+		.icon_develop
+			text-align: left
+			padding-top: 5.625rem
+			.icon
+				i
+					font-size: 4.5rem
+					margin-bottom: 2.25rem
+					color: #00c4c9
+					filter: grayscale(1)
+				h5
+					margin-bottom: 1.375rem
+					font-weight: 900
+				&:hover
+					i
+						filter: grayscale(0)
+						transition: .3s all ease-in-out
+					h5
+						color: #00c4c9
+						transition: .3s all ease-in-out
+	.home_note
+	+media-breakpoint-up(xs)
+		.text
+			padding: 1rem
+			text-align: center
+		.bt
+			a
+				padding: 0.5rem 2rem
+				background: #00c4c9
+				color: #fff
+				border-radius: 50px
+				font-size: 0.8rem
+				text-decoration: none
+				font-weight: 800
+	+media-breakpoint-up(md)
+		.home_note
+			position: relative
+			figure
+				img
+					background-size: cover
+			.text
+				position: absolute
+				text-align: center
+				left: 50%
+				top: 10%
+				color: #fff
+				transform: translateX(-50%)
+				width: 750px
+				font-size: 1.25rem
+				padding-bottom: 60px
+				.bt
+					margin-top: 1rem
+					a
+						padding: 0.5rem 2rem
+						background: #00c4c9
+						color: #fff
+						border-radius: 50px
+						font-size: 0.8rem
+						text-decoration: none
+						font-weight: 800
+	+media-breakpoint-up(lg)
+		.home_note
+			position: relative
+			figure
+				img
+					width: 100%
+			.text
+				top: 25%
+				.bt
+					margin-top: 3.4375rem
+					a
+						padding: 0.9375rem 4.0625rem
+						font-size: 1.125rem
+						&:hover
+							color: #000
+	.home_category
+	+media-breakpoint-up(xs)
+		.home_category
+			.title
+				padding-top: 2rem
+				h2
+					font-weight: 500
+					font-size: 1.5rem
+					padding-bottom: 10px
+					&:before, &:after
+						content: ''
+						display: block
+						width: 4rem
+						height: 3px
+						position: absolute
+						left: 50%
+						transform: translateX(-50%)
+						bottom: 0
+						background: #00c4c9
+					&:after
+						border-radius: 50%
+						width: 1rem
+						height: 1rem
+						top: 33px
+						border: 3px solid #00c4c9
+						background: #fff
+			.menu
+				padding-top: 1.875rem
+				text-align: center
+				.navbar-nav
+					display: inline-block
+					.nav-item
+						display: inline-block
+						.nav-link
+							color: #000
+							font-weight: 900
+							padding: 0.5rem 0.625rem
+			.img1
+				text-align: center
+				padding-top: 33px
+				padding-bottom: 15px
+				.img-fluid
+					padding-bottom: 10px
+	+media-breakpoint-up(md)
+		.home_category
+			.img1
+				.img-fluid
+					width: 75%
+	+media-breakpoint-up(lg)
+		.home_category
+			.title
+				padding-top: 5rem
+				h2
+					font-size: 2rem
+					font-weight: 900
+					&:before, &:after
+						height: 3px
+						bottom: 0
+					&:before
+						width: 4.5rem
+						bottom: -1px
+					&:after
+						border-radius: 50%
+						width: 1.07rem
+						height: 1.07rem
+						top: 42.5px
+			.menu
+				.navbar-nav
+					.nav-item
+						.nav-link
+							color: #000
+							font-weight: 900
+							padding: 0.5rem 0.625rem
+							&:hover,&.active
+								background: #00c4c9
+								padding: 0.5rem 0.625rem
+								border-radius: 50px
+								color: #fff
+			.img1
+				padding-bottom: 5rem
+				.img-fluid
+					width: 100%
+					padding-bottom: 0
+				img
+					filter: grayscale(1)
+					&:hover
+						box-shadow: 0px 0px 0px 4px #00c4c9
+						filter: grayscale(0)
+						transition: .3s all ease-in-out
+	.home_group
+	+media-breakpoint-up(xs)
+		.home_group
+			position: relative
+			.owl-carousel
+				.owl-dots
+					position: absolute
+					bottom: 2.5rem
+					left: 50%
+					transform: translateX(-50%)
+					span
+						margin: 0 5px
+					.active
+						span
+							background: #00c4c9
+				.item
+					.bg
+						position: relative
+						img
+							height: 600px
+						.title
+							position: absolute
+							z-index: 999
+							top: 0
+							left: 50%
+							transform: translateX(-50%)
+							text-align: center
+							.icon
+								position: absolute
+								margin-top: 3.125rem
+								width: 115px
+								height: 115px
+								border-radius: 50%
+								left: 50%
+								transform: translateX(-50%)
+							h2
+								position: relative
+								font-weight: 900
+								padding-bottom: 10px
+								padding-top: 5rem
+								&:before, &:after
+									content: ''
+									display: block
+									width: 4rem
+									height: 3px
+									position: absolute
+									left: 50%
+									transform: translateX(-50%)
+									bottom: -9px
+									background: #00c4c9
+								&:after
+									border-radius: 50%
+									width: 1rem
+									height: 1rem
+									top: 147.5px
+									border: 3px solid #00c4c9
+									background: #fff
+							.title1
+								position: absolute
+								width: 300px
+								top: 225%
+								left: -25%
+								h5
+									margin-top: 35px
+									color: #00c4c9
+	+media-breakpoint-up(sm)
+		.home_group
+			.owl-carousel
+				.owl-dots
+					bottom: 4.5rem
+				.item
+					.bg
+						.title
+							h2
+								&:before, &:after
+									width: 4.5rem
+								&:after
+									top: 114.5px
+									width: 1.07rem
+									height: 1.07rem
+							.title1
+								width: 450px
+								top: 260%
+								left: -45%
+	+media-breakpoint-up(lg)
+		.home_group
+			.owl-carousel
+				.owl-dots
+					bottom: 3rem
+				.item
+					padding-bottom: 2rem
+					position: relative
+					.bg
+						max-height: 536px
+					.title
+						h2
+							&:before, &:after
+								width: 4.5rem
+								bottom: -8px
+							&:after
+								width: 1.0625rem
+								height: 1.0625rem
+								top: 112.5px
+						.title1
+							width: 450px
+							top: 246%
+							left: -45%
+	.home_clients
+	+media-breakpoint-up(xs)
+		.home_clients
+			padding: 20px 0
+			.owl-carousel
+				width: 100%
+				.owl-nav
+					display: block
+					.owl-prev
+						color: #fff
+						background: #083e64
+						width: 2rem
+						height: 2rem
+					.owl-next
+						color: #fff
+						background: #083e64
+						width: 2rem
+						height: 2rem
+	+media-breakpoint-up(sm)
+		.home_clients
+			.owl-carousel
+				padding: 15px 0
+				.owl-nav
+					display: block
+					.owl-prev
+						position: absolute
+						top: 20%
+						left: -6%
+					.owl-next
+						position: absolute
+						top: 20%
+						right: -6%
+	+media-breakpoint-up(lg)
+		.home_clients
+			padding-bottom: 40px
+			.owl-carousel
+				padding-top: 10px
+				position: relative
+				.owl-nav
+					.owl-prev
+						top: 25%
+						left: -4%
+					.owl-next
+						top: 25%
+						right: -4%
